@@ -1,11 +1,6 @@
-## My Project
+## AWS Security Hub Partner Integration Guide
 
-TODO: Fill this README out!
-
-Be sure to:
-
-* Change the title in this README
-* Edit your repository description on GitHub
+The open source version of the AWS Security Hub Partner Integration Guide. To provide feedback or request changes, you can submit a pull request that contains your proposed changes.
 
 ## Security
 
