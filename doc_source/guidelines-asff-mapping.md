@@ -25,7 +25,7 @@ Add longer detailed information to `Description`\. `Description` is limited to 1
 
 ## Finding types<a name="asff-finding-types"></a>
 
-`Types` should match the [types taxonomy for ASFF](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-findings-format.html#securityhub-findings-format-type-taxonomy)\.
+`Types` should match the [types taxonomy for ASFF](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-findings-format-type-taxonomy.html)\.
 
 If needed, you can specify a custom classifier \(the third namespace\)\.
 
