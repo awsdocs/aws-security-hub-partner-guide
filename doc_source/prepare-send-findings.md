@@ -2,6 +2,8 @@
 
 As an APN Partner, you cannot send information to Security Hub for your customers until the Security Hub team enables you as a finding provider\. To be enabled as a finding provider, you must complete the following onboarding steps\. Doing so ensures a positive experience Security Hub for you and your customers\.
 
+As you complete the onboarding steps, be sure to follow the guidelines in [Tenets for creating and updating findings](tenets-update-create-findings.md), [Guidelines for mapping findings into the AWS Security Finding Format \(ASFF\)](guidelines-asff-mapping.md), and [Guidelines for using the `BatchImportFindings` API](guidelines-batchimportfindings.md)\.
+
 1. Map your security findings to the AWS Security Finding Format \(ASFF\)\.
 
 1. Build your integration architecture to push findings to the correct Regional Security Hub endpoint\. To do this, you define whether you will send findings from your own AWS account or from within your customer's accounts\.

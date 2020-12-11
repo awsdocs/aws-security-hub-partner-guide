@@ -6,6 +6,7 @@ The readiness checklist is used to conduct a final review of the integration bef
 
 **Topics**
 + [Guidelines for the logo to display on the AWS Security Hub console](guidelines-console-logo.md)
++ [Tenets for creating and updating findings](tenets-update-create-findings.md)
 + [Guidelines for mapping findings into the AWS Security Finding Format \(ASFF\)](guidelines-asff-mapping.md)
 + [Guidelines for using the `BatchImportFindings` API](guidelines-batchimportfindings.md)
 + [Product readiness checklist](product-readiness-checklist.md)

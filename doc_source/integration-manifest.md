@@ -11,7 +11,7 @@ To evaluate the quality of the proposed integration and the provided information
 
 All of the technical information that you provide must also be reflected in your documentation\.
 
-You can download a PDF version of the product integration manifest from the **Resources** section of the [AWS Security Hub partners](http://aws.amazon.com/security-hub/partners/) page\.
+You can download a PDF version of the product integration manifest from the **Resources** section of the AWS Security Hub partners page\. Note that the partners page is not available in the China \(Beijing\) and China \(Ningxia\) Regions\.
 
 **Contents**
 + [Use case and marketing information](manifest-use-case-marketing.md)

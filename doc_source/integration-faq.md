@@ -29,9 +29,9 @@ The following are common questions about setting up and maintaining an integrati
 
    1. Receive product ARNs to use with Security Hub, if you will be sending findings to Security Hub\.
 
-   1. Map your findings to ASFF\.
+   1. Map your findings to ASFF\. See [Guidelines for mapping findings into the AWS Security Finding Format \(ASFF\)](guidelines-asff-mapping.md)\.
 
-   1. Define your architecture for sending findings to and receiving findings from Security Hub\.
+   1. Define your architecture for sending findings to and receiving findings from Security Hub\. Follow the tenets outlined in [Tenets for creating and updating findings](tenets-update-create-findings.md)\.
 
    1. Create a deployment framework for customers\. For example, AWS CloudFormation scripts can serve this purpose\.
 
@@ -60,6 +60,8 @@ The following are common questions about setting up and maintaining an integrati
    These are the primary approaches:
    + You send findings from their own designated AWS account using the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html) operation\.
    + You send findings from within the customer account using the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html) operation\. You could use assume\-role approaches, but these approaches are not required\. 
+
+   For overall guidelines on using [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html), see [Guidelines for using the `BatchImportFindings` API](guidelines-batchimportfindings.md)\.
 
 1. **How do I gather my findings and push them to a Security Hub Regional endpoint? **
 
@@ -187,6 +189,8 @@ The following are common questions about setting up and maintaining an integrati
    You can batch up to 100 findings or 240 KB in a single call of [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html)\. Queue up and batch as many findings as possible up to this limit\.
 
    You can batch a set of findings from different accounts\. However, if any of the accounts in the batch are not subscribed to Security Hub, the entire batch fails\. This is a limitation of the API Gateway baseline authorization model\.
+
+   See [Guidelines for using the `BatchImportFindings` API](guidelines-batchimportfindings.md)\.
 
 1. **Can I send updates to findings that I created?**
 
