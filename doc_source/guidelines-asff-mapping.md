@@ -25,6 +25,8 @@ Add longer detailed information to `Description`\. `Description` is limited to 1
 
 ## Finding types<a name="asff-finding-types"></a>
 
+You provide your finding type information in `FindingProviderFields.Types`\.
+
 `Types` should match the [types taxonomy for ASFF](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-findings-format-type-taxonomy.html)\.
 
 If needed, you can specify a custom classifier \(the third namespace\)\.
@@ -51,7 +53,7 @@ datetime.datetime.utcnow().replace(tzinfo=datetime.timezone.utc).isoformat()
 
 ## Severity<a name="asff-severity"></a>
 
-For a new finding, you can provide the following values in the `Severity` object\.
+You provide severity information in the `FindingProviderFields.Severity` object, which contains the following fields\.
 
 **`Original`**  
 The severity value from your system\. `Original` can be any string, to accommodate the system that you use\.
@@ -63,7 +65,6 @@ The required Security Hub indicator of the finding severity\. The allowed values
 + `MEDIUM` – The issue must be addressed but not urgently\.
 + `HIGH` – The issue must be addressed as a priority\.
 + `CRITICAL` – The issue must be remediated immediately to prevent further harm\.
-You can set `Label` only when you create a new finding\. For existing findings, only customers can change the value of `Label`\.  
 Findings that are compliant should always have `Label` set to `INFORMATIONAL`\. Examples of `INFORMATIONAL` findings are findings from security checks that passed and AWS Firewall Manager findings that are remediated\.  
 Customers often sort findings by their severity to give their security operations teams a to\-do list\. Be conservative when setting the finding severity to `HIGH` or `CRITICAL`\.
 
@@ -201,11 +202,7 @@ Do not map to these fields or objects\.
 + `VerificationState`
 + `Workflow`
 
-If you do map to the following fields, you can only populate these fields when you create a new finding in Security Hub\. You cannot use [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html) to change the values of these fields and objects in an existing finding\.
+For these fields, map to the fields that are in the `FindingProviderFields` object\. Do not map to the top\-level fields\.
 + `Confidence` – Only include a confidence score \(0\-99\) if your service has a similar functionality, or if you stand 100% by your finding\.
-
-  Security Hub does not expose the confidence score on the Security Hub console\. The confidence score is only stored in the finding\.
 + `Criticality` – The criticality score \(0\-99\) is intended to express the importance of the resource associated with the finding\.
-
-  Security Hub does not expose the criticality score on the Security Hub console\. The criticality score is only stored in the finding\.
 + `RelatedFindings` – Only provide related findings if you can keep track of findings related to the same resource or finding type\. To identify a related finding, you must refer to the finding identifier of a finding that is already in Security Hub\.
