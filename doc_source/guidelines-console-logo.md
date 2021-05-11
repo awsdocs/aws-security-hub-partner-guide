@@ -2,15 +2,17 @@
 
 For the logo to display on the AWS Security Hub console, follow these guidelines\.
 
+**Light and dark modes**  
+You must provide both a light mode and a dark mode version of the logo\.
+
 **Format**  
-PNG file format
+SVG file format
 
 **Background color**  
-Transparent background is preferred\.  
-If the background is not transparent, use a solid white background\.
+Transparent
 
 **Size**  
-Ideal size is 175 px wide by 40 px high\.  
+Ideal ratio is 175 px wide by 40 px high\.  
 Minimum height is 40 px\.  
 Rectangular logos work best\.  
 The following image shows how an ideal logo is displayed on the Security Hub console\.  

@@ -103,15 +103,17 @@ Provide a URL to a logo to display on the Security Hub partners page\. The logo 
 + Background: transparent
 + Format: PNG
 
-## Logo for Security Hub console<a name="manifest-sechub-console-logo"></a>
+## Logos for Security Hub console<a name="manifest-sechub-console-logo"></a>
 
 Required for all integrations\.
 
-Provide a URL to a logo to display on the Security Hub console\. The logo must meet the following criteria:
-+ Size: 175 x 40 pixels
+Provide URLs to the light mode and dark mode logos to display on the Security Hub console\.
+
+The logos must meet the following criteria:
++ Format: SVG
++ Size: 175 x 40 pixels\. If larger, the image should use that ratio\.
 + Cropping: tight no padding
 + Background: transparent
-+ Format: PNG
 
 For detailed guidelines for the small logo, see [Guidelines for the logo to display on the AWS Security Hub console](guidelines-console-logo.md)\.
 

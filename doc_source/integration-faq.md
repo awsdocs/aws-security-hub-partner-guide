@@ -140,9 +140,9 @@ The following are common questions about setting up and maintaining an integrati
 
    With `BATCH_IMPORT_FINDINGS_FROM_CUSTOMER_ACCOUNT`, you can only send findings from the customer account that subscribed to you\. 
 
-1. **Assume a customer created a master account and added a few member accounts\. Does the customer need to subscribe each member account to me? Or does the customer only subscribe from master account, and I can then send findings against resources in all member accounts?**
+1. **Assume a customer created an administrator account and added a few member accounts\. Does the customer need to subscribe each member account to me? Or does the customer only subscribe from the administrator account, and I can then send findings against resources in all member accounts?**
 
-   This question asks whether the permissions are created for all member accounts based on the master account registration\.
+   This question asks whether the permissions are created for all member accounts based on the administrator account registration\.
 
    The customer must put a product subscription in place for each account\. They can do this programmatically through the API\.
 

@@ -25,7 +25,7 @@ You can download a PDF version of the product integration manifest from the **Re
   + [Company and product description](manifest-use-case-marketing.md#manifest-company-product-description)
   + [Partner website assets](manifest-use-case-marketing.md#manifest-website-assets)
   + [Logo for partners page](manifest-use-case-marketing.md#manifest-partners-page-logo)
-  + [Logo for Security Hub console](manifest-use-case-marketing.md#manifest-sechub-console-logo)
+  + [Logos for Security Hub console](manifest-use-case-marketing.md#manifest-sechub-console-logo)
   + [Finding types](manifest-use-case-marketing.md#manifest-finding-types)
   + [Hotline](manifest-use-case-marketing.md#manifest-hotline)
   + [Heartbeat finding](manifest-use-case-marketing.md#manifest-heartbeat-finding)
